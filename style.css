@@ -25,8 +25,7 @@ body{
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    width: 60vh;
-    min-width: 40vh;
+    width: 50%;
     background-image: url('assets/nicolas-caetano-IwjD_KaMGbo-unsplash.jpg');
     background-position: center;
     background-size: cover;
@@ -63,5 +62,61 @@ a{
 
 a:hover{
     color: grey;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    width: auto;
+    height: 300px;
+    font-size: 2rem;
+    color: white;
+    
+}
+
+.form-container{
+    display: flex;
+    background-color: #232136;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: auto;
+    height: 500px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+label{
+    color: white;
+}
+.column{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5em;
+    width: 35%;
+    height: 70%;
+}
+
+form{
+    font-size: 1.5rem;
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+}
+input{
+    font-family: Josefin;
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+
 }
 
