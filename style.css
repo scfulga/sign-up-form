@@ -16,6 +16,7 @@
 body{ 
     font-family: Josefin;
     display: flex;
+    color: #faf4ed;
     min-height: 100vh;
     background-color: #191724;
 }
@@ -38,7 +39,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: Norse;
-    color: white;
+    color: #faf4ed;
     font-size: 5rem;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -46,7 +47,7 @@ body{
 }
 #credits{
     font-size: 20px;
-    color: white;
+    color: #faf4ed;
     position: absolute;
     bottom: 5%;
 }
@@ -57,11 +58,13 @@ body{
 }
 
 a{
-    color: white;
+    color: #c4a7e7;
+    text-decoration: underline;
 }
 
 a:hover{
-    color: grey;
+    color: #907aa9; 
+    cursor: pointer;
 }
 
 .text-container{
@@ -72,12 +75,14 @@ a:hover{
     width: auto;
     height: 300px;
     font-size: 2rem;
-    color: white;
+    color: #faf4ed;
     
 }
 
 .form-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #232136;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: auto;
@@ -91,7 +96,7 @@ a:hover{
 
 }
 label{
-    color: white;
+    color: #faf4ed;
 }
 .column{
     gap: 10px;
@@ -100,7 +105,11 @@ label{
     justify-content: center;
     margin-left: 5em;
     width: 35%;
-    height: 70%;
+    height: 85%;
+}
+
+.left-column{
+    margin-top: 50px;
 }
 
 form{
@@ -108,19 +117,55 @@ form{
     display: flex;
     width: 100%;
     height: 500px;
-
 }
+
 input{
     font-family: Josefin;
     font-size: 16px;
+    background-color: #faf4ed;
     width: 300px;
     height: 30px;
     border-radius: 10px;
-    border: none;
+}
 
+
+input:invalid{
+    border: 3px solid #eb6f92;
+}
+
+input:valid{ 
+    border: 3px solid #9ccfd8;
+}
+
+input:placeholder-shown {
+    border: 3px solid #9893a5;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border: 4px solid #c4a7e7;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animate border color and shadow */
+}
+
+input, textarea, select {
+  padding: 4px;
 }
 
 button{
-    width: 50px;
-    height: 50px;
+    font-family: Josefin;
+    font-size: 1rem; 
+    background-color: #191724;
+    border: 2px solid #faf4ed; 
+    border-radius: 10px;
+    color: #faf4ed;
+    margin-top: 1em;
+    width: 125px;
+    height: 45px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #21202e;
+    border: 2px solid white;
+    color: white;
 }

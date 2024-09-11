@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
+        <title>sign-up</title>
         <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script> 
     </head>
     <body>
         <div class="img-container">
@@ -19,11 +20,11 @@
         <div class="container">
             <div class="text-container">
                 <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Orci odio elit odio class primis proin purus. Vulputate scelerisque imperdiet ligula dis conubia.</p>
-                <p>Sign up to get started</p>
+                <strong>Sign up to get started</strong>
             </div>
             <div class="form-container">
-                <form action="index.html" method="post">
-                    <div class="column">
+                <form id="form" action="index.html" method="post">
+                    <div class="column left-column">
                         <label for="first-name">First Name:</label>
                         <input id="first-name" type="text" name="first-name" placeholder="John" required=""> 
                         
@@ -32,14 +33,15 @@
 
                         <label for="password">Password:</label>
                         <input id="password" type="password" name="password" required="">
-                        <button type="submit">submit</button>
+                        <button id="submit" type="submit">Sign up</button>
+                        <p class="liltxt">Already have an account? <a>Log in</a> </p>
                     </div>
                     <div class="column">
                         <label for="last-name">Last Name:</label>
                         <input id="last-name" type="text" name="last-name" placeholder="Doe" required="">
 
                         <label for="phone-number">Phone Number:</label>
-                        <input id="phone-number" type="tel" name="phone-number" placeholder="123-123-123">
+                        <input id="phone-number" type="tel" name="phone-number" placeholder="123-456-7890">
 
                         <label for="cpassword">Confirm Password</label>
                         <input id="cpassword" type="password" name="cpassword" required=""> 
